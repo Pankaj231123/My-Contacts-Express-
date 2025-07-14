@@ -9,6 +9,7 @@ const getContact = (req,res)=>{
 //@route Post /api/contacts
 //access the public
 const createContact = (req,res)=>{
+    console.log("The request bidy is:", req.body);
     res.status(201).json({message : "Created the contacts."});
 };
 
